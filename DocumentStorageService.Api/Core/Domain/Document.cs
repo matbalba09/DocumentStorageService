@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json.Serialization;
 
-namespace DocumentStorageService.Api.Core.Domain
+namespace DocumentStorageService.Core.Domain
 {
     public class Document
     {

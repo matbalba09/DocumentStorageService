@@ -1,4 +1,4 @@
-﻿namespace DocumentStorageService.Api.Dto
+﻿namespace DocumentStorageService.Dto
 {
     public class DocumentDto
     {

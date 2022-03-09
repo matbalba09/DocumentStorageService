@@ -1,4 +1,4 @@
-﻿namespace DocumentStorageService.Api.Extensions
+﻿namespace DocumentStorageService.Extensions
 {
     public static class TestExtensions
     {
@@ -6,7 +6,7 @@
            this IServiceCollection services,
            IConfiguration configuration)
         {
-            services.AddDbContext<PlutoContext>(options =>
+            services.AddDbContext<DocumentStorageServiceContext>(options =>
                 options.UseNpgsql(configuration.GetConnectionString("DefaultConnection")));
             return services;
         }

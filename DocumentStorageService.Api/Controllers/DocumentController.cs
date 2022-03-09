@@ -1,11 +1,11 @@
-﻿using DocumentStorageService.Api.Core;
-using DocumentStorageService.Api.Core.Domain;
-using DocumentStorageService.Api.Core.Repositories;
-using DocumentStorageService.Api.Dto;
+﻿using DocumentStorageService.Core;
+using DocumentStorageService.Core.Domain;
+using DocumentStorageService.Core.Repositories;
+using DocumentStorageService.Dto;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DocumentStorageService.Api.Controllers
+namespace DocumentStorageService.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

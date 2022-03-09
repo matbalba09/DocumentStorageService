@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace DocumentStorageService.Api.Core.Domain
+namespace DocumentStorageService.Core.Domain
 {
     public class FileType
     {

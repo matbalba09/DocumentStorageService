@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "DocumentStorageService.Api": {
+    "DocumentStorageService": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

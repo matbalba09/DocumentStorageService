@@ -1,7 +1,7 @@
-﻿using DocumentStorageService.Api.Core.Domain;
-using DocumentStorageService.Api.Dto;
+﻿using DocumentStorageService.Core.Domain;
+using DocumentStorageService.Dto;
 
-namespace DocumentStorageService.Api.Core.Repositories
+namespace DocumentStorageService.Core.Repositories
 {
     public interface IDocumentRepository : IRepository<Document>
     {

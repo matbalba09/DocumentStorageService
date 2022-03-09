@@ -1,14 +1,14 @@
-﻿using DocumentStorageService.Api.Core;
-using DocumentStorageService.Api.Core.Repositories;
-using DocumentStorageService.Api.Persistence.Repositories;
+﻿using DocumentStorageService.Core;
+using DocumentStorageService.Core.Repositories;
+using DocumentStorageService.Persistence.Repositories;
 
-namespace DocumentStorageService.Api.Persistence
+namespace DocumentStorageService.Persistence
 {
     public class UnitOfWork : IUnitOfWork
     {
-        protected readonly PlutoContext _context;
+        protected readonly DocumentStorageServiceContext _context;
 
-        public UnitOfWork(PlutoContext context)
+        public UnitOfWork(DocumentStorageServiceContext context)
         {
             _context = context;
             document = new DocumentRepository(_context);

@@ -1,6 +1,6 @@
 ﻿using System.Linq.Expressions;
 
-namespace DocumentStorageService.Api.Core.Repositories
+namespace DocumentStorageService.Core.Repositories
 {
     public interface IRepository<TEntity> where TEntity : class
     {

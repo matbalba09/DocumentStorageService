@@ -1,32 +1,32 @@
-﻿using DocumentStorageService.Api.Core.Domain;
-using DocumentStorageService.Api.Core.Repositories;
+﻿using DocumentStorageService.Core.Domain;
+using DocumentStorageService.Core.Repositories;
 using System.Data.Entity;
 
-namespace DocumentStorageService.Api.Persistence.Repositories
+namespace DocumentStorageService.Persistence.Repositories
 {
     public class DocumentRepository : Repository<Document>, IDocumentRepository
     {
-        public DocumentRepository(PlutoContext context) : base(context)
+        public DocumentRepository(DocumentStorageServiceContext context) : base(context)
         {
         }
 
         //public Document GetDocumentWithFileType(int id)
         //{
-        //    return PlutoContext.document.SingleOrDefault(a => a.doc_id == id);//Include(a => a.file_types).SingleOrDefault(a => a.doc_id == id);
+        //    return DocumentStorageServiceContext.document.SingleOrDefault(a => a.doc_id == id);//Include(a => a.file_types).SingleOrDefault(a => a.doc_id == id);
         //}
         public IEnumerable<Document> GetAllDocument()
         {
-            return PlutoContext.document.ToList();
+            return DocumentStorageServiceContext.document.ToList();
         }
 
         public void AddDocument(Document document)
         {
-            PlutoContext.document.Add(document);
+            DocumentStorageServiceContext.document.Add(document);
         }
 
-        public PlutoContext PlutoContext
+        public DocumentStorageServiceContext DocumentStorageServiceContext
         {
-            get { return _context as PlutoContext; }
+            get { return _context as DocumentStorageServiceContext; }
         }
     }
 }

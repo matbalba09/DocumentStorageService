@@ -1,10 +1,10 @@
-﻿using DocumentStorageService.Api.Core.Domain;
+﻿using DocumentStorageService.Core.Domain;
 
-namespace DocumentStorageService.Api.Persistence
+namespace DocumentStorageService.Persistence
 {
-    public class PlutoContext : DbContext
+    public class DocumentStorageServiceContext : DbContext
     {
-        public PlutoContext(DbContextOptions<PlutoContext> options) : base(options)
+        public DocumentStorageServiceContext(DbContextOptions<DocumentStorageServiceContext> options) : base(options)
         {
 
         }

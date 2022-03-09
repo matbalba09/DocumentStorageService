@@ -1,6 +1,6 @@
-﻿using DocumentStorageService.Api.Core.Repositories;
+﻿using DocumentStorageService.Core.Repositories;
 
-namespace DocumentStorageService.Api.Core
+namespace DocumentStorageService.Core
 {
     public interface IUnitOfWork : IDisposable
     {

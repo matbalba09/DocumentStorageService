@@ -1,19 +1,19 @@
 global using Microsoft.EntityFrameworkCore;
-global using DocumentStorageService.Api.Persistence;
+global using DocumentStorageService.Persistence;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System.Text;
-using DocumentStorageService.Api.Extensions;
-using DocumentStorageService.Api.Core;
+using DocumentStorageService.Extensions;
+using DocumentStorageService.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<PlutoContext>(options =>
+builder.Services.AddDbContext<DocumentStorageServiceContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
